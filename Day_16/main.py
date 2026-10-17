@@ -1,7 +1,7 @@
-'''from turtle import Turtle, Screen
+from turtle import Turtle, Screen
 
 timmy = Turtle()
-
+'''
 print(timmy)
 timmy.shape("turtle")
 timmy.color("coral")
@@ -10,7 +10,7 @@ timmy.forward(100)
 my_screen = Screen()
 print(my_screen.canvheight)
 my_screen.exitonclick()
-
+'''
 timmy.speed(0)
 timmy.bgcolor("black")
 timmy.color("aqua")
@@ -19,6 +19,8 @@ for i in range(170):
     timmy.left(5)
     
 timmy.done()
+
+
 '''
 from prettytable import PrettyTable
 table = PrettyTable()
@@ -28,4 +30,4 @@ table.add_column("Type", ["Fire", "Water"])
 table.header_style = "upper"
 table.align = 'l'
 table.junction_char = "."
-print(table)
+print(table)'''

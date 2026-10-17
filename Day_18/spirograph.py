@@ -32,11 +32,14 @@ def draw_spirograph(size_of_gap):
         tim.circle(100)
         tim.setheading(tim.heading() + size_of_gap)
 
-draw_spirograph(10)
+draw_spirograph(20)
 
 
 
 
 screen = t.Screen()
-screen.exitonclick()
 screen.setup(width=800, height=600)
+
+draw_spirograph(20)
+
+screen.exitonclick()
