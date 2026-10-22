@@ -6,6 +6,7 @@ import colorgram
 screen = t.Screen()
 t.colormode(255) #Permite usar colores rgb
 t.shape("turtle")
+t.hideturtle()
 t.penup()
 #t.goto(-225, -225) #indica la coordenada donde debe iniciar a pintar
 t.speed(5)
@@ -60,10 +61,9 @@ def grid_size(n_dots, pixels):
     for _ in range(n_dots):
         print_dots(n_dots, pixels)
 
-grid_size(5, 10)
+grid_size(10, 50)
      
 
 screen = t.Screen()
 screen.exitonclick()
 
-#10 x 10 rows dots 20 space 50
