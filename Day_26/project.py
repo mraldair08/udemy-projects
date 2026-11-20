@@ -3,12 +3,16 @@ import pandas
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 
+def generate_phonetic():
+    word = input("Enter a word: ").upper() 
 
-word = input("Enter a word: ").upper()
-print(word)
+    try:
+        phonetic_word = [phonetic_dict[letter] for letter in word]
+    except KeyError as error_message:
+        print(f"{error_message} is not a letter")
+        generate_phonetic()
+    else:
+        print(phonetic_word)
 
-phonetic_word = [phonetic_dict[letter] for letter in word]
-print(phonetic_word)
 
-
-# # new_list = [new item for item in list]
+generate_phonetic()
